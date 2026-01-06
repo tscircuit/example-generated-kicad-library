@@ -31,9 +31,30 @@
 - tsconfig.json
 - FullKeyboard.tsx
 
+```tsx
+// lib/my-footprint-library.ts
+
+export { KeyHotSwapSwitch } from "lib/components/KeyHotSwapSwitch"
+export { SpacebarKey } from "lib/components/SpacebarKey"
+export { NormalKey } from "lib/components/NormalKey"
+```
+
 #### Output
 
 What does the resulting kicad project look like? Directory-structure wise?
+
+- `fp_lib_table`
+- `sym_lib_table`
+- `symbols`
+-   `tscircuit.sym`
+-   `my-library.sym`
+- `footprints`
+-   `tscircuit_builtin.pretty`
+-     `0402.kicad_mod`
+-     `soic8_w3.kicad_mod`
+-   `my-library.pretty`
+-      `SpacebarKey.kicad_mod`
+-      `NormalKey.kicad_mod`
 
 ## Project 2
 
