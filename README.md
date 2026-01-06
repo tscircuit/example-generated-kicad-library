@@ -14,7 +14,16 @@
 - lib/index.ts
 - lib/src/global.ts
 - lib/my-footprint-library.ts
-- lib/generated
+- lib/3D_Models/KeyHotSwapSwitch.glb
+- lib/3D_Models/KeyHotSwapSwitch.step
+- lib/3D_Models/Spacebar.glb
+- lib/3D_Models/Spacebar.step
+- lib/3D_Models/Key.glb
+- lib/3D_Models/Key.step
+- lib/components/KeyHotSwapSwitch.tsx
+- lib/components/NormalKey.tsx
+- lib/components/SpacebarKey.tsx
+- lib/components/AnyKey.tsx
 - tsconfig.json
 - MainCircuitExample.tsx
 
