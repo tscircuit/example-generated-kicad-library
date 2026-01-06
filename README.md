@@ -44,6 +44,10 @@
 export { KeyHotSwapSwitch } from "lib/components/KeyHotSwapSwitch"
 export { SpacebarKey } from "lib/components/SpacebarKey"
 export { NormalKey } from "lib/components/NormalKey"
+
+export const notExportedToKicad = "some string"
+export type notExportedToKicadType = number
+export const notExportedToKicadFn = () => 10
 ```
 
 ```js
