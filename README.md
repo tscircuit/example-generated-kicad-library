@@ -58,6 +58,24 @@ What does the resulting kicad project look like? Directory-structure wise?
 
 ## Project 2
 
+
+## circuit-json-to-kicad
+
+
+```tsx
+import { KicadLibraryConverter } from "circuit-json-to-kicad"
+
+// What the code looks like in the CLI
+const convert = new KicadLibraryConverter({
+  filePaths: ["lib/index.ts", "lib/components/SpacebarKey.tsx"],
+  buildFilePath: async (filePath: string) => {
+    return await generateCircuitJson(filePath)
+  }
+})
+
+convert.getOutput() // { kicadProjectFsMap: Record<FilePath, FileContent | Buffer> }
+```
+
 ## References
 
 - https://github.com/espressif/kicad-libraries/tree/main
