@@ -64,7 +64,7 @@ What does the resulting kicad project look like? Directory-structure wise?
 ├─ fp_lib_table
 ├─ sym_lib_table
 ├─ symbols/
-│  ├─ tscircuit.kicad_sym
+│  ├─ tscircuit_builtin.kicad_sym
 │  └─ my-library.kicad_sym
 ├─ footprints/
 │  ├─ tscircuit_builtin.pretty/
@@ -75,6 +75,7 @@ What does the resulting kicad project look like? Directory-structure wise?
 │     ├─ NormalKey.kicad_mod
 │     └─ KeyHotSwapSwitch.kicad_mod
 ├─ 3dmodels/
+│  ├─ tscircuit_builtin.3dshapes
 │  └─ my-library.3dshapes/
 │     ├─ Spacebar.step
 │     ├─ NormalKey.step
