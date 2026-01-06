@@ -21,6 +21,9 @@
 │  ├─ src/
 │  │  └─ global.ts
 │  ├─ my-footprint-library.ts
+│  ├─ custom-symbols/
+│  │  ├─ index.tsx
+│  │  ├─ SpacebarSymbol.tsx
 │  ├─ components/
 │  │  ├─ KeyHotSwapSwitch.tsx
 │  │  ├─ NormalKey.tsx
@@ -44,6 +47,13 @@
 export { KeyHotSwapSwitch } from "lib/components/KeyHotSwapSwitch"
 export { SpacebarKey } from "lib/components/SpacebarKey"
 export { NormalKey } from "lib/components/NormalKey"
+
+// Symbols may not be used in chips, but should still be included in the
+// output library if exported here
+export { SpacebarSymbol } from "lib/custom-symbols/SpacebarSymbol"
+
+// This should also work- you must evaluate this file to find all the exports
+export * from "lib/custom-symbols"
 
 export const notExportedToKicad = "some string"
 export type notExportedToKicadType = number
