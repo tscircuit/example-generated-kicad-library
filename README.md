@@ -111,6 +111,12 @@ const output = convert.getOutput()
 
 ```
 
+## User Story
+
+### Making a Library
+
+I want just a library, I don't need a kicad_pro file etc. It's not a kicad project, it's a library. No extra things.
+
 ## References
 
 - https://github.com/espressif/kicad-libraries/tree/main
