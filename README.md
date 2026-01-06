@@ -58,7 +58,16 @@ export const notExportedToKicadFn = () => 10
 }
 ```
 
-> Implementation note: kicad-lib should be marked as ignored inside `.gitignore` for most users, we won't
+> Implementation Note 1: Symbols should not be "duplicated"- if two chips use the same symbol, reuse that
+> symbol. Symbol names should therefore NOT inherit the name of the component UNLESS they are custom. e.g.
+>
+> If you have `export const MyComponent = () => <chip footprint="soic8" />`, the symbol name will be `soic8`.
+>
+> If you have `export const MyComponent = () => <chip symbol={<symbol>...</symbol>} />` the symbol name will be `MyComponent`.
+>
+> If you have `export const MyComponent = () => <chip symbol={<symbol name="MySymbol">...</symbol>} />` the symbol name will be `MySymbol`
+
+> Implementation Note 2: kicad-lib should be marked as ignored inside `.gitignore` for most users, we won't
 > do this automatically because some users may commit artifacts, but we may ask during `tsci init` if the
 > user is explicitly creating a kicad library
 
