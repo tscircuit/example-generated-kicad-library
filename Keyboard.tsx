@@ -13,9 +13,9 @@ export default () => (
         key={`row1_${i}`}
         name={`K1_${i + 1}`}
         pcbX={i * KEY_SPACING - bounds.centerX + KEY_SPACING / 2}
-        pcbY={-bounds.centerY + KEY_SPACING / 2}
+        pcbY={bounds.centerY - KEY_SPACING / 2}
         schX={i * 2}
-        schY={0}
+        schY={9}
       />
     ))}
 
@@ -25,9 +25,9 @@ export default () => (
         key={`row2_${i}`}
         name={`K2_${i + 1}`}
         pcbX={i * KEY_SPACING - bounds.centerX + KEY_SPACING / 2}
-        pcbY={-bounds.centerY + KEY_SPACING * 1.5}
+        pcbY={bounds.centerY - KEY_SPACING * 1.5}
         schX={i * 2}
-        schY={3}
+        schY={6}
       />
     ))}
 
@@ -37,9 +37,9 @@ export default () => (
         key={`row3_${i}`}
         name={`K3_${i + 1}`}
         pcbX={i * KEY_SPACING - bounds.centerX + KEY_SPACING / 2}
-        pcbY={-bounds.centerY + KEY_SPACING * 2.5}
+        pcbY={bounds.centerY - KEY_SPACING * 2.5}
         schX={i * 2}
-        schY={6}
+        schY={3}
       />
     ))}
 
@@ -47,9 +47,9 @@ export default () => (
     <SpacebarKey
       name="SPACE"
       pcbX={0}
-      pcbY={-bounds.centerY + KEY_SPACING * 3.5}
+      pcbY={bounds.centerY - KEY_SPACING * 3.5}
       schX={10}
-      schY={9}
+      schY={0}
     />
   </board>
 )
