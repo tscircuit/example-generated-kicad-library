@@ -24,4 +24,12 @@
     (drill 2.9999939999999996)
     (layers *.Cu *.Mask)
   )
+  (model "${KIPRJMOD}/my-footprint-library.3dshapes/CherryMxSwitch.STEP"
+    (offset
+      (xyz 0 0 0)
+    )
+    (rotate
+      (xyz 0 180 90)
+    )
+  )
 )

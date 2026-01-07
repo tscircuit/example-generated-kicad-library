@@ -1,5 +1,7 @@
 import { createUseComponent } from "@tscircuit/core"
 import type { CommonLayoutProps } from "@tscircuit/props"
+// @ts-ignore: import of STEP model file without type declarations
+import CherryMxSwitch from "../3dmodels/CherryMxSwitch.STEP"
 
 const pinLabels = {
   "1": "pin1",
@@ -54,12 +56,18 @@ export const KeyShaftForHotSocket = (props: Props) => {
           />
         </footprint>
       }
-      cadModel={{
-        objUrl:
-          "https://modelcdn.tscircuit.com/easyeda_models/download?uuid=c00f29e7afb64c29bc388e168980ded2&pn=C400227",
-        rotationOffset: { x: 0, y: 0, z: 90 },
-        positionOffset: { x: 0, y: 0, z: 0 },
-      }}
+      cadModel={
+        <cadmodel modelUrl={CherryMxSwitch}
+        rotationOffset={{ x: 0, y: 0, z: 90 }} positionOffset={{ x: 0, y: 0, z: 0 }}
+        />
+      }
+      // cadModel={{
+      //   objUrl:
+      //     "https://modelcdn.tscircuit.com/easyeda_models/download?uuid=c00f29e7afb64c29bc388e168980ded2&pn=C400227",
+      //   stlUrl: "./../3dmodels/CherryMxSwitch.STEP",
+      //   rotationOffset: { x: 0, y: 0, z: 90 },
+      //   positionOffset: { x: 0, y: 0, z: 0 },
+      // }}
       pinLabels={pinLabels}
       schPinSpacing={0.75}
       schPortArrangement={{}}
