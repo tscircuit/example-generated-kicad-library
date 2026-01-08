@@ -1,5 +1,5 @@
 import { createUseComponent } from "@tscircuit/core"
-import type { CommonLayoutProps } from "@tscircuit/props"
+import type { CommonLayoutProps, ChipProps } from "@tscircuit/props"
 // @ts-ignore: import of STEP model file without type declarations
 import CherryMxSwitch from "../3dmodels/CherryMxSwitch.STEP"
 
@@ -12,7 +12,7 @@ const pinNames = Object.values(pinLabels)
 
 interface Props extends CommonLayoutProps {
   name: string
-  connections?: { pin1?: string; pin2?: string }
+  connections?: ChipProps<"pin1" | "pin2">["connections"]
 }
 
 export const KeyHotSocket = (props: Props) => {

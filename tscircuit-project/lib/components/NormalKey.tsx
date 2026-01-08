@@ -1,17 +1,8 @@
+import type { ChipProps } from "@tscircuit/props"
 import { KeyHotSocket } from "./KeyHotSocket"
 import { KeyShaftForHotSocket } from "./KeyShaftForHotSocket"
 
-export const NormalKey = (props: {
-  pcbX?: number
-  pcbY?: number
-  schX?: number
-  schY?: number
-  name: string
-  connections?: {
-    pin1?: string
-    pin2?: string
-  }
-}) => {
+export const NormalKey = (props: ChipProps<"pin1" | "pin2">) => {
   return (
     <group
       pcbX={props.pcbX}

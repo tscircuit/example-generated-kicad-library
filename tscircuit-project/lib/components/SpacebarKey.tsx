@@ -1,17 +1,8 @@
+import type { ChipProps } from "@tscircuit/props"
 import { KeyHotSocket } from "./KeyHotSocket"
 import { KeyShaftForHotSocket } from "./KeyShaftForHotSocket"
 
-export const SpacebarKey = (props: {
-  pcbX?: number
-  pcbY?: number
-  schX?: number
-  schY?: number
-  name: string
-  connections?: {
-    pin1?: string
-    pin2?: string
-  }
-}) => {
+export const SpacebarKey = (props: ChipProps<"pin1" | "pin2">) => {
   // Spacebar is wider - uses multiple stabilizer points
   return (
     <group
