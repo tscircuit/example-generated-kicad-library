@@ -1,0 +1,31 @@
+(footprint
+  "chip"
+  (layer F.Cu)
+  (at 0 0 0)
+  (pad "" np_thru_hole circle
+    (at -3.8099999999999454 -2.364998799999985 0)
+    (size 2.9999939999999996 2.9999939999999996)
+    (drill 2.9999939999999996)
+    (layers *.Cu *.Mask)
+  )
+  (pad "" np_thru_hole circle
+    (at 2.5399999999999636 -4.904998800000062 0)
+    (size 2.9999939999999996 2.9999939999999996)
+    (drill 2.9999939999999996)
+    (layers *.Cu *.Mask)
+  )
+  (pad "" np_thru_hole circle
+    (at 0 0 0)
+    (size 4.1999916 4.1999916)
+    (drill 4.1999916)
+    (layers *.Cu *.Mask)
+  )
+  (model "${KIPRJMOD}/my-footprint-library.3dshapes/CherryMxSwitch.STEP"
+    (offset
+      (xyz 0 0 0)
+    )
+    (rotate
+      (xyz 0 0 90)
+    )
+  )
+)
