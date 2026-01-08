@@ -1,4 +1,5 @@
 // This is the kicad library entrypoint
+export { AnyKey } from "./components/AnyKey"
 export { KeyHotSocket } from "./components/KeyHotSocket"
 export { KeyShaftForHotSocket } from "./components/KeyShaftForHotSocket"
 export { NormalKey } from "./components/NormalKey"
