@@ -108,14 +108,19 @@ export const KeyHotSocket = (props: Props) => {
         jlcpcb: ["C41430893"],
       }}
       cadModel={
-        <cadmodel modelUrl={CherryMxSwitch}
-        rotationOffset={{ x: 0, y: 0, z: 90 }} positionOffset={{ x: 0, y: 0, z: 0 }}
-        />
+        <cadassembly>
+          <cadmodel modelUrl={CherryMxSwitch}
+            rotationOffset={{ x: 0, y: 0, z: 90 }} positionOffset={{ x: 0, y: 0, z: 0 }}
+            />
+          <cadmodel modelUrl="https://modelcdn.tscircuit.com/easyeda_models/download?uuid=c886ec2b42464573a88fc1f647577a49&pn=C5184526"
+            rotationOffset={{ x: 0, y: 0, z: 90 }} positionOffset={{ x: 0, y: 0, z: 0 }}
+            />
+        </cadassembly>
       }
       // cadModel={{
       //   objUrl:
       //     "https://modelcdn.tscircuit.com/easyeda_models/download?uuid=c886ec2b42464573a88fc1f647577a49&pn=C5184526",
-      //   stlUrl: "./../3dmodels/CherryMxSwitch.STEP",
+      //   stlUrl: CherryMxSwitch,
       //   rotationOffset: { x: 0, y: 0, z: 0 },
       //   positionOffset: { x: 0, y: 0, z: 0 },
       // }}

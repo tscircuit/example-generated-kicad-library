@@ -57,14 +57,19 @@ export const KeyShaftForHotSocket = (props: Props) => {
         </footprint>
       }
       cadModel={
-        <cadmodel modelUrl={CherryMxSwitch}
-        rotationOffset={{ x: 0, y: 0, z: 90 }} positionOffset={{ x: 0, y: 0, z: 0 }}
-        />
+        <cadassembly>
+          <cadmodel modelUrl={CherryMxSwitch}
+            rotationOffset={{ x: 0, y: 0, z: 90 }} positionOffset={{ x: 0, y: 0, z: 0 }}
+            />
+          <cadmodel modelUrl="https://modelcdn.tscircuit.com/easyeda_models/download?uuid=c00f29e7afb64c29bc388e168980ded2&pn=C400227"
+            rotationOffset={{ x: 0, y: 0, z: 90 }} positionOffset={{ x: 0, y: 0, z: 0 }}
+            />
+        </cadassembly>
       }
       // cadModel={{
       //   objUrl:
       //     "https://modelcdn.tscircuit.com/easyeda_models/download?uuid=c00f29e7afb64c29bc388e168980ded2&pn=C400227",
-      //   stlUrl: "./../3dmodels/CherryMxSwitch.STEP",
+      //   stlUrl: CherryMxSwitch,
       //   rotationOffset: { x: 0, y: 0, z: 90 },
       //   positionOffset: { x: 0, y: 0, z: 0 },
       // }}
